@@ -12,7 +12,7 @@
 
 <p align="left"> <a href="https://twitter.com/iamayuv" target="blank"><img src="https://img.shields.io/twitter/follow/iamayuv?logo=twitter&style=for-the-badge" alt="iamayuv" /></a> </p>
 
-- 🌱 I’m currently learning **C++,Data Structure and Algorithms**
+- 🌱 I’m currently learning **C++, Python, Data Structure and Algorithms and Data Analytical tools such as Tableau and Power BI**
 
 - 👨‍💻 All of my projects are available at [ayuvgr8.me](ayuvgr8.me)
 
