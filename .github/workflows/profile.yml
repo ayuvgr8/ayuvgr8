@@ -1,13 +1,15 @@
 # ============================================================================
-#  Save this file at:  .github/workflows/profile.yml   (in your ayuvgr8/ayuvgr8 repo)
-#  Powers all three dynamic README pieces:
+#  Save at:  .github/workflows/profile.yml   (in your ayuvgr8/ayuvgr8 repo)
+#  Powers all dynamic README pieces:
 #    1. Contribution snake   -> "output" branch
 #    2. 3D isometric skyline -> "profile-3d-contrib/" folder on main
 #    3. Analytics dashboard  -> "profile-summary-card-output" branch
 #
-#  Runs every 12 hours + on-demand from the Actions tab.
-#  ⚠️ Requires: Settings -> Actions -> General -> Workflow permissions ->
-#     "Read and write permissions" -> Save.
+#  Jobs run SEQUENTIALLY so only one writes to git at a time (avoids the
+#  "git push Invalid status code" race).
+#
+#  Requires once: Settings -> Actions -> General -> Workflow permissions
+#  -> "Read and write permissions" -> Save.
 # ============================================================================
 
 name: Generate Profile Assets
@@ -20,8 +22,12 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
 jobs:
-  # ---------- 1. Contribution snake ----------
+  # ---------- 1. Contribution snake (bright green snake, visible blue->green dots) ----------
   snake:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -32,7 +38,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=00E5A0&color_dots=0A0D14,1B3A6B,2E5FA8,4F8EF7,00E5A0
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=00E5A0&color_dots=161B22,0B2E63,1660C4,4F8EF7,7FB3FF
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
@@ -42,8 +48,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ---------- 2. 3D isometric contribution skyline ----------
-  #  NOTE: this action reads the username from an ENV var, not a `with:` input.
   skyline-3d:
+    needs: snake
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -63,6 +69,7 @@ jobs:
 
   # ---------- 3. Analytics dashboard cards ----------
   summary-cards:
+    needs: skyline-3d
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
