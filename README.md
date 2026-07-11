@@ -1,8 +1,10 @@
 <!-- ============================================================= -->
 <!--  AYUSH VERMA · GitHub Profile README                          -->
 <!--  Palette: bg #0A0D14 · blue #4F8EF7 · green #00E5A0           -->
-<!--  Edit anything in [ brackets ] or the "Things I've Shipped"   -->
-<!--  section to match what you want public.                       -->
+<!--  Dynamic pieces powered by GitHub Actions (see profile.yml):  -->
+<!--    • Contribution snake        → output branch                -->
+<!--    • 3D isometric skyline       → profile-3d-contrib/ folder   -->
+<!--    • Analytics dashboard cards  → profile-summary-card-output  -->
 <!-- ============================================================= -->
 
 <!-- ===================== ANIMATED HEADER ===================== -->
@@ -53,7 +55,7 @@ const ayush = {
 - 💬 &nbsp;Ask me about **shipping products solo, AI agents, or Next.js**
 - 📫 &nbsp;Reach me at **ayuvgr8@gmail.com**
 
-<br/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,100:00E5A0&height=2" alt="divider"/>
 
 <!-- ===================== THINGS I'VE SHIPPED ===================== -->
 ## 🚀 Things I've Shipped
@@ -105,7 +107,7 @@ Parking SaaS exploring smart-city + retail parking operations and booking.
 </tr>
 </table>
 
-<br/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,100:00E5A0&height=2" alt="divider"/>
 
 <!-- ===================== TECH STACK ===================== -->
 ## 🛠️ Tech Stack
@@ -133,7 +135,7 @@ Parking SaaS exploring smart-city + retail parking operations and booking.
 
 <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,postman" />
 
-<br/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,100:00E5A0&height=2" alt="divider"/>
 
 <!-- ===================== GITHUB STATS ===================== -->
 ## 📊 GitHub Stats
@@ -154,6 +156,22 @@ Parking SaaS exploring smart-city + retail parking operations and booking.
 
 </div>
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,100:00E5A0&height=2" alt="divider"/>
+
+<!-- ===================== ANALYTICS DASHBOARD (GitHub Action) ===================== -->
+<!-- Rendered by github-profile-summary-cards. Blank until profile.yml runs once. -->
+## 📈 Deeper Analytics
+
+<div align="center">
+
+<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/4-productive-time.svg" alt="productive time"/>
+<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="repos per language"/>
+
+<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="most commit language"/>
+<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/3-stats.svg" alt="stats"/>
+
+</div>
+
 <!-- ===================== ACTIVITY GRAPH ===================== -->
 <div align="center">
 
@@ -161,8 +179,22 @@ Parking SaaS exploring smart-city + retail parking operations and booking.
 
 </div>
 
-<!-- ===================== CONTRIBUTION SNAKE ===================== -->
-<!-- Needs the snake GitHub Action (see setup note). Until it runs once, this image is blank. -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,100:00E5A0&height=2" alt="divider"/>
+
+<!-- ===================== 3D CONTRIBUTION SKYLINE (GitHub Action) ===================== -->
+<!-- Rendered by github-profile-3d-contrib. Blank until profile.yml runs once.        -->
+<!-- Swap the filename to change style:                                                -->
+<!--   profile-night-green.svg · profile-night-rainbow.svg · profile-night-view.svg    -->
+<!--   profile-season-animate.svg (animated) · profile-gitblock.svg                    -->
+## 🧊 3D Contribution Skyline
+
+<div align="center">
+
+<img width="100%" src="./profile-3d-contrib/profile-night-green.svg" alt="3d contribution graph"/>
+
+</div>
+
+<!-- ===================== CONTRIBUTION SNAKE (GitHub Action) ===================== -->
 <div align="center">
 
 <picture>
