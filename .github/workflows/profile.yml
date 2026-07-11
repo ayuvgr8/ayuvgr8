@@ -1,24 +1,21 @@
 # ============================================================================
 #  Save this file at:  .github/workflows/profile.yml   (in your ayuvgr8/ayuvgr8 repo)
-#  This ONE workflow powers all three dynamic pieces in the README:
-#    1. Contribution snake   -> pushed to the "output" branch
-#    2. 3D isometric skyline -> committed to "profile-3d-contrib/" on main
-#    3. Analytics dashboard  -> pushed to "profile-summary-card-output" branch
+#  Powers all three dynamic README pieces:
+#    1. Contribution snake   -> "output" branch
+#    2. 3D isometric skyline -> "profile-3d-contrib/" folder on main
+#    3. Analytics dashboard  -> "profile-summary-card-output" branch
 #
-#  It replaces the old snake.yml — delete that one so they don't both run.
 #  Runs every 12 hours + on-demand from the Actions tab.
-#
-#  ⚠️ REQUIRED once: Repo Settings -> Actions -> General ->
-#     "Workflow permissions" -> select "Read and write permissions" -> Save.
-#     (Without this, all three jobs fail to push.)
+#  ⚠️ Requires: Settings -> Actions -> General -> Workflow permissions ->
+#     "Read and write permissions" -> Save.
 # ============================================================================
 
 name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # every 12 hours
-  workflow_dispatch:          # run manually from the Actions tab
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -45,16 +42,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ---------- 2. 3D isometric contribution skyline ----------
+  #  NOTE: this action reads the username from an ENV var, not a `with:` input.
   skyline-3d:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - name: Generate 3D contribution graph
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1   # bump to the latest tag if you like
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
           USERNAME: ${{ github.repository_owner }}
       - name: Commit & push SVGs
         run: |
@@ -76,4 +73,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-          UTC_OFFSET: 5   # IST (+5:30 -> use 5); makes the "productive time" card accurate
+          UTC_OFFSET: 5
