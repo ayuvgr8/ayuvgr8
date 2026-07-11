@@ -1,11 +1,13 @@
-<!-- ============================================================= -->
-<!--  AYUSH VERMA · GitHub Profile README                          -->
-<!--  Palette: bg #0A0D14 · blue #4F8EF7 · green #00E5A0           -->
-<!--  Dynamic pieces powered by GitHub Actions (see profile.yml):  -->
-<!--    • Contribution snake        → output branch                -->
-<!--    • 3D isometric skyline       → profile-3d-contrib/ folder   -->
-<!--    • Analytics dashboard cards  → profile-summary-card-output  -->
-<!-- ============================================================= -->
+<!-- ============================================================================ -->
+<!--  AYUSH VERMA · GitHub Profile README                                          -->
+<!--  Palette: bg #0A0D14 · blue #4F8EF7 · green #00E5A0                            -->
+<!--  All stat visuals are self-hosted in your repo (never rate-limit):            -->
+<!--    • Streak card       → streak-stats.demolab.com (healthy host)              -->
+<!--    • Dashboard cards    → profile-summary-card-output branch                   -->
+<!--    • Activity graph     → github-readme-activity-graph (healthy host)          -->
+<!--    • 3D skyline         → profile-3d-contrib/ folder                           -->
+<!--    • Snake              → output branch                                        -->
+<!-- ============================================================================ -->
 
 <!-- ===================== ANIMATED HEADER ===================== -->
 <a href="https://github.com/ayuvgr8">
@@ -137,56 +139,41 @@ Parking SaaS exploring smart-city + retail parking operations and booking.
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,100:00E5A0&height=2" alt="divider"/>
 
-<!-- ===================== GITHUB STATS ===================== -->
+<!-- ===================== GITHUB STATS (all self-hosted / healthy hosts) ===================== -->
 ## 📊 GitHub Stats
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=ayuvgr8&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&title_color=4F8EF7&icon_color=00E5A0&text_color=C9D1D9&bg_color=0A0D14" alt="stats"/>
-<img height="165" src="https://streak-stats.demolab.com/?user=ayuvgr8&hide_border=true&background=0A0D14&stroke=1B2838&ring=00E5A0&fire=00E5A0&currStreakLabel=4F8EF7&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B98B8" alt="streak"/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayuvgr8&layout=compact&langs_count=8&hide_border=true&title_color=4F8EF7&text_color=C9D1D9&bg_color=0A0D14" alt="top-langs"/>
+<img height="175" src="https://streak-stats.demolab.com/?user=ayuvgr8&hide_border=true&background=0A0D14&stroke=1B2838&ring=00E5A0&fire=00E5A0&currStreakLabel=4F8EF7&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B98B8" alt="streak"/>
 
 </div>
 
-<!-- ===================== TROPHIES ===================== -->
+<!-- Dashboard cards live in your own repo (profile-summary-card-output branch) -->
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=ayuvgr8&theme=onedark&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="trophies"/>
+<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/3-stats.svg" alt="stats"/>
+<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/4-productive-time.svg" alt="productive time"/>
+
+<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="repos per language"/>
+<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="most commit language"/>
 
 </div>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,100:00E5A0&height=2" alt="divider"/>
 
-<!-- ===================== ANALYTICS DASHBOARD (GitHub Action) ===================== -->
-<!-- Rendered by github-profile-summary-cards. Blank until profile.yml runs once. -->
-## 📈 Deeper Analytics
+<!-- ===================== CONTRIBUTION ACTIVITY ===================== -->
+## 📈 Contribution Activity
 
-<div align="center">
-
-<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/4-productive-time.svg" alt="productive time"/>
-<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="repos per language"/>
-
-<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="most commit language"/>
-<img width="49%" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/profile-summary-card-output/github_dark/3-stats.svg" alt="stats"/>
-
-</div>
-
-<!-- ===================== ACTIVITY GRAPH ===================== -->
 <div align="center">
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=ayuvgr8&bg_color=0A0D14&color=4F8EF7&line=00E5A0&point=FFFFFF&area=true&hide_border=true&custom_title=Contribution%20Graph" alt="activity-graph"/>
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,100:00E5A0&height=2" alt="divider"/>
-
-<!-- ===================== 3D CONTRIBUTION SKYLINE (GitHub Action) ===================== -->
-<!-- Rendered by github-profile-3d-contrib. Blank until profile.yml runs once.        -->
-<!-- Swap the filename to change style:                                                -->
-<!--   profile-night-green.svg · profile-night-rainbow.svg · profile-night-view.svg    -->
-<!--   profile-season-animate.svg (animated) · profile-gitblock.svg                    -->
-## 🧊 3D Contribution Skyline
+<!-- 3D isometric skyline (self-hosted). Swap the filename to change style:          -->
+<!--   profile-night-green.svg · profile-night-rainbow.svg · profile-night-view.svg  -->
+<!--   profile-season-animate.svg (animated) · profile-gitblock.svg                  -->
+### 🧊 3D Contribution Skyline
 
 <div align="center">
 
@@ -194,13 +181,14 @@ Parking SaaS exploring smart-city + retail parking operations and booking.
 
 </div>
 
-<!-- ===================== CONTRIBUTION SNAKE (GitHub Action) ===================== -->
+### 🐍 Watch the Snake Eat My Commits
+
 <div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/output/github-contribution-grid-snake.svg" />
-  <img alt="snake animation" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/output/github-contribution-grid-snake.svg" />
+  <img alt="snake animation" src="https://raw.githubusercontent.com/ayuvgr8/ayuvgr8/output/github-contribution-grid-snake-dark.svg" />
 </picture>
 
 </div>
